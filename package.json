@@ -1,0 +1,25 @@
+{
+  "name": "moojo-assignment",
+  "version": "1.0.0",
+  "description": "Home assignment for Moojo",
+  "main": "index.js",
+  "scripts": {
+    "test": "concurrently -k \"npx hardhat node\" \"npx wait-on tcp:8545 && npx hardhat test\""
+  },
+  "author": "Ohad Baehr",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.1.0",
+    "@openzeppelin/hardhat-upgrades": "^3.6.0",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/mocha": "^10.0.10",
+    "chai": "^4.2.0",
+    "concurrently": "^9.1.0",
+    "ethers": "^6.13.4",
+    "hardhat": "^2.22.16",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.7.2"
+  }
+}
